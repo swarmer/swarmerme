@@ -4,6 +4,27 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    postcss: {
+      options: {
+        map: {
+          inline: false,
+          annotation: 'swarmerme/static/dist/maps/'
+        },
+
+        processors: [
+          require('autoprefixer-core')({
+            browsers: 'last 2 versions'
+          }),
+          require('cssnano')()
+        ]
+      },
+
+      custom: {
+        src: 'swarmerme/static/*.css',
+        dest: 'swarmerme/static/dist/style.css'
+      }
+    },
+
     bower: {
       dev: {
         dest: distPath,
@@ -47,6 +68,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-bower');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-postcss');
 
-  grunt.registerTask('default', ['clean:static', 'bower']);
+  grunt.registerTask('default', ['clean:static', 'bower', 'postcss:custom']);
 };
