@@ -38,16 +38,8 @@
     flex-grow: 1;
 }
 
-#project-files {
-    background-color: #FF6E5E;
-}
-
-#project-urls {
-    background-color: #2EBF55;
-}
-
-#project-tester {
-    background-color: #48B8E8;
+.tag {
+    margin-right: 5px;
 }
 
 
