@@ -23,6 +23,15 @@ module.exports = function(grunt) {
               files: [
                 "dist/*"
               ]
+            },
+
+            'components-font-awesome': {
+              stripGlobBase: false,
+
+              files: [
+                "css/*",
+                "fonts/*"
+              ]
             }
           }
         }
