@@ -1,0 +1,15 @@
+{
+  "name": "swarmerme",
+  "version": "0.0.0",
+  "description": "My personal page",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swarmer/swarmerme.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower": "^0.20.0",
+    "grunt-contrib-clean": "^0.6.0"
+  }
+}
