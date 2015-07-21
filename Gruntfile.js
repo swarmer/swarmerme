@@ -4,6 +4,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    watch: {
+      css: {
+        files: ['swarmerme/static/*.css'],
+        tasks: ['default'],
+      },
+    },
+
     postcss: {
       options: {
         map: {
@@ -69,6 +76,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bower');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['clean:static', 'bower', 'postcss:custom']);
 };
