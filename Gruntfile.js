@@ -22,7 +22,13 @@ module.exports = function(grunt) {
           require('autoprefixer-core')({
             browsers: 'last 2 versions'
           }),
-          require('cssnano')()
+          require('cssnano')({
+            autoprefixer: false,
+            merge: false,
+            idents: false,
+            unused: false,
+            zindex: false
+          })
         ]
       },
 
