@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
-  var distPath = 'swarmerme/static/dist';
+  var distPath = 'build/static/dist/';
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     watch: {
-      css: {
-        files: ['swarmerme/static/*.css'],
+      all: {
+        files: ['swarmerme/**'],
         tasks: ['default'],
       },
     },
@@ -15,7 +15,6 @@ module.exports = function(grunt) {
       options: {
         map: {
           inline: false,
-          annotation: 'swarmerme/static/dist/maps/'
         },
 
         processors: [
@@ -33,8 +32,14 @@ module.exports = function(grunt) {
       },
 
       custom: {
-        src: 'swarmerme/static/*.css',
-        dest: 'swarmerme/static/dist/style.css'
+        files: [
+          {
+            expand: true,
+            src: ['build/static/*.css'],
+            dest: './',
+            ext: '.min.css',
+          },
+        ]
       }
     },
 
@@ -49,13 +54,22 @@ module.exports = function(grunt) {
           packageSpecific: {
             bootstrap: {
               files: [
-                "dist/**"
+                'dist/**'
               ]
             },
 
             jquery: {
               files: [
-                "dist/*"
+                'dist/*'
+              ]
+            },
+
+            underscore: {
+              stripGlobBase: false,
+
+              files: [
+                'underscore-min.js',
+                'underscore-min.map'
               ]
             },
 
@@ -63,8 +77,8 @@ module.exports = function(grunt) {
               stripGlobBase: false,
 
               files: [
-                "css/*",
-                "fonts/*"
+                'css/*',
+                'fonts/*'
               ]
             }
           }
@@ -73,8 +87,21 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      'static': {
-        src: [distPath]
+      build: {
+        src: ['build/*']
+      }
+    },
+
+    copy: {
+      build: {
+        files: [
+          {
+            expand: true,
+            cwd: 'swarmerme/',
+            src: '**',
+            dest: 'build/'
+          }
+        ]
       }
     }
   });
@@ -83,6 +110,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['clean:static', 'bower', 'postcss:custom']);
+  grunt.registerTask('default',
+    ['clean:build', 'copy:build', 'bower',
+      'postcss:custom']);
 };

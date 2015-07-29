@@ -1,5 +1,5 @@
 bower_components/
 node_modules/
-swarmerme/static/dist/
+build/
 
 swarmerme.zip
