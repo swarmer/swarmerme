@@ -103,6 +103,27 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    uglify: {
+      options: {
+        mangle: false,
+        sourceMap: true,
+        compress: {
+          sequences: false,
+          join_vars: false
+        }
+      },
+      custom: {
+        files: [
+          {
+            expand: true,
+            src: ['build/static/*.js'],
+            dest: './',
+            ext: '.min.js',
+          },
+        ]
+      }
     }
   });
 
@@ -111,8 +132,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default',
     ['clean:build', 'copy:build', 'bower',
-      'postcss:custom']);
+      'postcss:custom', 'uglify:custom']);
 };
