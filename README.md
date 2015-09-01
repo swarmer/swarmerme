@@ -3,5 +3,5 @@ My personal page
 
 ## Dependencies
 - npm
-- grunt
+- gulp
 - bower
