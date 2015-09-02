@@ -15,6 +15,10 @@
 
 
 /* Project list */
+.projects-section {
+    margin-top: 50px;
+}
+
 .project-container {
     max-width: 1000px;
     margin-left: auto;
