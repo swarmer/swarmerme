@@ -50,9 +50,10 @@ gulp.task('css', ['copyStatic'], function () {
         }),
         cssnano({
             autoprefixer: false,
-            merge: false,
-            idents: false,
-            unused: false,
+            mergeRules: false,
+            mergeIdents: false,
+            reduceIdents: false,
+            discardUnused: false,
             zindex: false
         })
     ];
