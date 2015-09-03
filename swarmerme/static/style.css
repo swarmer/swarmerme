@@ -1,5 +1,5 @@
 /* Fonts */
-@import url(http://fonts.googleapis.com/css?family=Exo+2:300&subset=latin,cyrillic);
+/*@import url(http://fonts.googleapis.com/css?family=Exo+2:300&subset=latin,cyrillic);*/
 
 
 /* Heading */
@@ -15,7 +15,7 @@
 
 
 /* Project list */
-.projects-section {
+.main-section {
     margin-top: 50px;
 }
 
@@ -62,5 +62,20 @@
 footer {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-item {
+    display: inline-block;
+}
+
+.contact-item + .contact-item::before {
+    content: "|";
+    color: #707070;
+    margin: 0 3px;
 }
