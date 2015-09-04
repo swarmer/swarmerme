@@ -21,7 +21,7 @@
     margin-bottom: 10px;
 }
 
-.jumbotron h1 {
+.jumbotron h1, .project-title {
     font-family: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
