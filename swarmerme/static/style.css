@@ -1,5 +1,17 @@
 /* Fonts */
-/*@import url(http://fonts.googleapis.com/css?family=Exo+2:300&subset=latin,cyrillic);*/
+@font-face {
+  font-family: 'Exo 2';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/static/fonts/Exo-2-300/Exo-2-300.eot');
+  src: url('/static/fonts/Exo-2-300/Exo-2-300.eot?#iefix') format('embedded-opentype'),
+       local('Exo 2 Light'),
+       local('Exo-2-300'),
+       url('/static/fonts/Exo-2-300/Exo-2-300.woff2') format('woff2'),
+       url('/static/fonts/Exo-2-300/Exo-2-300.woff') format('woff'),
+       url('/static/fonts/Exo-2-300/Exo-2-300.ttf') format('truetype'),
+       url('/static/fonts/Exo-2-300/Exo-2-300.svg#Exo2') format('svg');
+}
 
 
 /* Heading */
