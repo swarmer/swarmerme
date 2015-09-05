@@ -21,6 +21,17 @@
     margin-bottom: 10px;
 }
 
+.jumbotron p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+}
+
 .jumbotron h1, .project-title {
     font-family: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -28,7 +39,7 @@
 
 /* Project list */
 .main-section {
-    margin-top: 50px;
+    margin-top: 76px;
 }
 
 .project-container {
