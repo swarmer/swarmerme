@@ -19,6 +19,9 @@
     text-align: center;
     padding: 100px 0;
     margin-bottom: 10px;
+
+    background-color: #0095FF;
+    color: white;
 }
 
 .jumbotron p {
