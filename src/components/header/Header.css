@@ -1,0 +1,25 @@
+/* Heading */
+.jumbotron {
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 10px;
+
+  background-color: rgb(124, 68, 175);
+  color: white;
+}
+
+.jumbotron p {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+      font-size: 45px;
+      margin-bottom: 20px;
+  }
+}
+
+.jumbotron h1 {
+  font-family: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}

@@ -16,6 +16,8 @@
 
 .project-title {
   margin-top: 0;
+  font-family: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 .project-description {
@@ -27,6 +29,6 @@
   margin-right: 5px;
 }
 
-span.fa, span.fa-tag {
+span.fa {
   margin-right: 2px;
 }

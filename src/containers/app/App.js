@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import Project from 'components/project/Project'
-import Footer from 'components/footer/Footer'
+import Header from 'components/header/Header';
+import Project from 'components/project/Project';
+import Footer from 'components/footer/Footer';
 
 import './App.css';
 
@@ -10,17 +11,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="jumbotron">
-          <div className="container">
-            <h1>swarmer.me</h1>
-            <p>
-              Hello. I'm Anton Barkovsky and I enjoy mastering state of the art tools to build great products.
-            </p>
-            <p>
-              Check out some of my projects.
-            </p>
-          </div>
-        </header>
+        <Header title="swarmer.me">
+          <p>
+            Hello. I'm Anton Barkovsky and I enjoy mastering state of the art tools to build great products.
+          </p>
+          <p>
+            Check out some of my projects.
+          </p>
+        </Header>
 
         <section className="main-section">
           <h2 className="text-center">Web</h2>
