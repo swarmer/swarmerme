@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Project from '../project/Project'
-import Footer from '../footer/Footer'
+import Project from 'components/project/Project'
+import Footer from 'components/footer/Footer'
 
 import './App.css';
 
