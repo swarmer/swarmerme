@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Project from '../project/Project'
+import Footer from '../footer/Footer'
 
 import './App.css';
 
@@ -92,24 +93,13 @@ class App extends Component {
           </div>
         </section>
 
-        <footer>
-          <span className="text-muted">© 2015 Anton Barkovsky</span>
+        <Footer
+          copyright="© 2017 Anton Barkovsky"
 
-          <ul className="contact-list">
-            <li className="contact-item">
-              <span className="fa fa-skype"></span>
-              <a href="skype:swarmer.pm?chat">swarmer.pm</a>
-            </li>
-            <li className="contact-item">
-              <span className="fa fa-envelope"></span>
-              <a href="mailto:anton@swarmer.me">anton@swarmer.me</a>
-            </li>
-            <li className="contact-item">
-              <span className="fa fa-github"></span>
-              <a href="https://github.com/swarmer">swarmer</a>
-            </li>
-          </ul>
-        </footer>
+          skype="swarmer.pm"
+          email="anton@swarmer.me"
+          github="swarmer"
+        />
       </div>
     );
   }

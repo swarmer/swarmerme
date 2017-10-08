@@ -73,26 +73,3 @@
 span.fa, span.fa-tag {
   margin-right: 2px;
 }
-
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 15px;
-}
-
-.contact-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.contact-item {
-  display: inline-block;
-}
-
-.contact-item + .contact-item::before {
-  content: "|";
-  color: #707070;
-  margin: 0 3px;
-}
