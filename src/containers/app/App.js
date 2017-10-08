@@ -51,6 +51,31 @@ class App extends Component {
 
         <ProjectSection title="Other">
           <Project
+            title="compendium"
+            description="My personal knowledge base"
+            tagList="Markdown"
+            link="compendium.swarmer.me"
+            github="swarmer/compendium"
+          />
+          <Project
+            title="depchecker"
+            description="A tool that checks python project dependencies"
+            tagList="Python, setuptools"
+            github="swarmer/depchecker"
+          />
+          <Project
+            title="mig"
+            description="A transport network protocol"
+            tagList="Rust, Networking"
+            github="swarmer/mig"
+          />
+          <Project
+            title="watcherd"
+            description="A minimal process supervisor"
+            tagList="Rust, Linux"
+            github="swarmer/watcherd"
+          />
+          <Project
             title="syslights"
             description="Arduino-powered system load indicator"
             tagList="C, Arduino"
