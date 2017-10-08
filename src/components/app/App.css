@@ -1,0 +1,98 @@
+/* Heading */
+.jumbotron {
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 10px;
+
+  background-color: rgb(20, 120, 180);
+  color: white;
+}
+
+.jumbotron p {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+      font-size: 45px;
+      margin-bottom: 20px;
+  }
+}
+
+.jumbotron h1, .project-title {
+  font-family: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+
+/* Project list */
+.main-section {
+  margin-top: 50px;
+}
+
+.project-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.project {
+  flex-basis: 250px;
+  flex-grow: 1;
+  max-width: 400px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  /* IE is my favorite browser */
+  overflow: auto;
+}
+
+.project-title {
+  margin-top: 0;
+}
+
+.project-description {
+  flex-grow: 1;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+span.fa, span.fa-tag {
+  margin-right: 2px;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-item {
+  display: inline-block;
+}
+
+.contact-item + .contact-item::before {
+  content: "|";
+  color: #707070;
+  margin: 0 3px;
+}
