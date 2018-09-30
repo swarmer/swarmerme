@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <Header title="swarmer.me">
           <p>
-            Hello. I'm Anton Barkovsky and I enjoy mastering state of the art tools to build great products.
+            Hello, I'm Anton Barkovsky.
           </p>
           <p>
             Check out some of my projects.
