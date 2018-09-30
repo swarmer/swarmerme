@@ -8,6 +8,8 @@ import Footer from 'components/footer/Footer';
 
 class App extends Component {
   render() {
+    const currentYear = (new Date()).getFullYear();
+
     return (
       <div className="App">
         <Header title="swarmer.me">
@@ -108,9 +110,8 @@ class App extends Component {
         </ProjectSection>
 
         <Footer
-          copyright="© 2017 Anton Barkovsky"
+          copyright={`© ${currentYear} Anton Barkovsky`}
 
-          skype="swarmer.pm"
           email="anton@swarmer.me"
           github="swarmer"
         />
