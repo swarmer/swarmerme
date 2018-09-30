@@ -16,7 +16,7 @@ class Project extends Component {
   render() {
     const { title, description, tagList, link, github } = this.props;
 
-    const tags = tagList.split(',');
+    const tags = tagList.split(', ');
 
     return (
       <section className="project panel panel-default">
@@ -28,7 +28,7 @@ class Project extends Component {
             {
               tags.map((tag) =>
                 <span className="tag label label-default" key={tag}>
-                  <span className="fa fa-tag"></span>
+                  <span className="fas fa-tag">&nbsp;</span>
                   {tag}
                 </span>
               )
@@ -38,7 +38,7 @@ class Project extends Component {
 
         { link !== undefined &&
           <p>
-            <span className="fa fa-external-link">&nbsp;</span>
+            <span className="fas fa-external-link-alt">&nbsp;</span>
             <a href={"http://" + link + "/"}>
               {link}
             </a>
@@ -47,7 +47,7 @@ class Project extends Component {
 
         { github !== undefined &&
           <p>
-            <span className="fa fa-github">&nbsp;</span>
+            <span className="fab fa-github">&nbsp;</span>
             <a href={"https://github.com/" + github}>{github}</a>
           </p>
         }

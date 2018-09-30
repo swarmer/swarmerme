@@ -21,7 +21,7 @@ class App extends Component {
           </p>
         </Header>
 
-        <ProjectSection title="Web Frontend">
+        <ProjectSection title="Web Frontend" iconId="fas fa-laptop-code">
           <Project
             title="swarmerme"
             description="This website"
@@ -30,7 +30,7 @@ class App extends Component {
           />
         </ProjectSection>
 
-        <ProjectSection title="Machine Learning">
+        <ProjectSection title="Machine Learning" iconId="fas fa-robot">
           <Project
             title="liveness"
             description="Plant health analysis using neural networks"
@@ -45,7 +45,7 @@ class App extends Component {
           />
         </ProjectSection>
 
-        <ProjectSection title="Python Utilities">
+        <ProjectSection title="Python Utilities" iconId="fab fa-python">
           <Project
             title="cfglib"
             description="An extensible configuration management library"
@@ -66,7 +66,7 @@ class App extends Component {
           />
         </ProjectSection>
 
-        <ProjectSection title="Systems Programming">
+        <ProjectSection title="Systems Programming" iconId="fas fa-cogs">
           <Project
             title="mig"
             description="A transport network protocol"
