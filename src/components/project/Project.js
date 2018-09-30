@@ -11,12 +11,12 @@ class Project extends Component {
     tagList: PropTypes.string.isRequired,
     link: PropTypes.string,
     github: PropTypes.string,
-  }
+  };
 
   render() {
     const { title, description, tagList, link, github } = this.props;
 
-    var tags = tagList.split(',');
+    const tags = tagList.split(',');
 
     return (
       <section className="project panel panel-default">
@@ -38,7 +38,7 @@ class Project extends Component {
 
         { link !== undefined &&
           <p>
-            <span className="fa fa-external-link"></span>
+            <span className="fa fa-external-link">&nbsp;</span>
             <a href={"http://" + link + "/"}>
               {link}
             </a>
@@ -47,7 +47,7 @@ class Project extends Component {
 
         { github !== undefined &&
           <p>
-            <span className="fa fa-github"></span>
+            <span className="fa fa-github">&nbsp;</span>
             <a href={"https://github.com/" + github}>{github}</a>
           </p>
         }
