@@ -9,9 +9,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "^1.1.5"
   },
   "scripts": {
     "start": "cross-env NODE_PATH=src react-scripts start",
@@ -20,6 +20,6 @@
     "eject": "cross-env NODE_PATH=src react-scripts eject"
   },
   "devDependencies": {
-    "cross-env": "^5.0.5"
+    "cross-env": "^5.2.0"
   }
 }
