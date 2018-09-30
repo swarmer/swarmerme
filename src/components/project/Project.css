@@ -1,7 +1,7 @@
 .project {
-  flex-basis: 250px;
+  flex-basis: 320px;
   flex-grow: 1;
-  max-width: 400px;
+  max-width: 320px;
   padding: 15px;
   margin: 5px;
   border-radius: 0;
