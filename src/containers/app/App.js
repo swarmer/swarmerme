@@ -21,43 +21,36 @@ class App extends Component {
           </p>
         </Header>
 
-        <ProjectSection title="Web">
+        <ProjectSection title="Web Frontend">
           <Project
             title="swarmerme"
             description="This website"
             tagList="HTML, CSS, JavaScript, React"
             github="swarmer/swarmerme"
           />
+        </ProjectSection>
+
+        <ProjectSection title="Machine Learning">
           <Project
-            title="tester"
-            description="A web app that helps in studying"
-            tagList="Python, Django, HTML, CSS, JavaScript, jQuery, Gulp"
-            link="tester.swarmer.me"
-            github="swarmer/tester"
+            title="liveness"
+            description="Plant health analysis using neural networks"
+            tagList="Keras, numpy, Python"
+            github="swarmer/liveness"
           />
           <Project
-            title="blurry"
-            description="A Canvas demo"
-            tagList="HTML, JavaScript, Canvas, Gulp"
-            link="blurry.swarmer.me"
-            github="swarmer/blurry"
-          />
-          <Project
-            title="urls"
-            description="A personal url shortener"
-            tagList="Python, Django"
-            link="urls.swarmer.me"
-            github="swarmer/urls"
+            title="manualnet"
+            description="A manual implementation of a simple neural network"
+            tagList="numpy, Python"
+            github="swarmer/manualnet"
           />
         </ProjectSection>
 
-        <ProjectSection title="Other">
+        <ProjectSection title="Python Utilities">
           <Project
-            title="compendium"
-            description="My personal knowledge base"
-            tagList="Markdown"
-            link="compendium.swarmer.me"
-            github="swarmer/compendium"
+            title="cfglib"
+            description="An extensible configuration management library"
+            tagList="Python"
+            github="swarmer/cfglib"
           />
           <Project
             title="depchecker"
@@ -65,6 +58,15 @@ class App extends Component {
             tagList="Python, setuptools"
             github="swarmer/depchecker"
           />
+          <Project
+            title="nlist"
+            description="A Python library providing a lightweight multidimensional list"
+            tagList="Python, pytest, sphinx, pypi"
+            github="swarmer/nlist"
+          />
+        </ProjectSection>
+
+        <ProjectSection title="Systems Programming">
           <Project
             title="mig"
             description="A transport network protocol"
@@ -89,23 +91,27 @@ class App extends Component {
             tagList="C, Linux"
             github="swarmer/thedoor"
           />
+        </ProjectSection>
+
+        <ProjectSection title="Other">
           <Project
-            title="nlist"
-            description="A Python library providing a lightweight multidimensional list"
-            tagList="Python, pytest, sphinx, pypi"
-            github="swarmer/nlist"
+            title="compendium"
+            description="My personal knowledge base"
+            tagList="Markdown"
+            link="compendium.swarmer.me"
+            github="swarmer/compendium"
+          />
+          <Project
+            title="threedy"
+            description="A 3D graphics demo implemented manually on top of 2D primitives"
+            tagList="Rust"
+            github="swarmer/threedy"
           />
           <Project
             title="algorithms"
             description="Some common algorithms and data structures that I've implemented as a reference"
             tagList="C++, Algorithms, Data structures"
             github="swarmer/algorithms"
-          />
-          <Project
-            title="restnotifier"
-            description="A desktop application that reminds user to rest"
-            tagList="C++, Qt, CMake"
-            github="swarmer/restnotifier"
           />
         </ProjectSection>
 
