@@ -32,9 +32,15 @@ class App extends Component {
 
         <ProjectSection title="Machine Learning" iconId="fas fa-robot">
           <Project
+            title="hero2vec"
+            description="Learning (word2vec style) dota2 hero embeddings from matches"
+            tagList="pytorch"
+            github="swarmer/hero2vec"
+          />
+          <Project
             title="liveness"
             description="Plant health analysis using neural networks"
-            tagList="Keras, numpy, Python"
+            tagList="keras, tensorflow, numpy, Python"
             github="swarmer/liveness"
           />
           <Project
